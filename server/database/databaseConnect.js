@@ -1,7 +1,6 @@
 const mysql = require('mysql');
 
 const dbPool = mysql.createPool({
-    //connectionLimit : 10,//not required
     password : 'qwerty123',
     user : 'root',
     database : 'accessoiresdb',
