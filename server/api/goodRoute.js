@@ -7,7 +7,6 @@ router.get('/getAllGoods', async (req, res, next) =>{
         if(!validation.validateToken(req.headers.content_val)) { return res.json(-1); };
 
         let allGoods = await goodContext.getAllGoods();
-        console.log(allGoods);
 
         if(allGoods==null || allGoods == undefined){ return res.json(-1); }
         
